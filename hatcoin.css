@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.zeo-img:hover img{
+    opacity: 0;
+}
+.zeo-img:hover img.hover-img{
+    opacity: 1;
+}
+
+img.hover-img{
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+}
+.zeo-img{
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 35px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
+    
+}
+.zeo-img img{
+    width: 100%;
+    transition: all linear 0.7s;
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    
+}
+.navlist a:hover{
+    border-bottom: 2px solid wheat;
+}
+#menu-icon img{
+    width: 20px;
+    margin-top: 15px;
+   
+}
+.zeo{
+    height: 90%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #052a35 0%, #32373c 28.53%, #32373c 75.21%);
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.zeo-text h5{
+ font-size: 
+ 14px;
+ font-weight: 400;
+ color: white;
+ position: relative;
+ top: 60px;
+}
+
+.zeo-text h1{
+    font-family: 'Permanent Marker' cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: whitesmoke;
+    margin: 0 0 45px;
+    position: relative;
+    top: 55px;
+}
+
+.zeo-text h4{
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+}
+
+.zeo-text p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 20px;
+}
+.zeo-text i{
+    color: #fff;
+    font-size: 9px;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+
+.zeo-text a{
+    display: inline-block;
+    color: #fff;
+    background: #052a35;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease-in;
+}
+
+.zeo-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translate(8px);
+}
+.zeo-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+.zeo-text a.ctaa{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+ @media(max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+ }
+ @media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+ }
+@media (max-width: 1340px){
+    .zeo-img{
+        width: 100%;
+        height: auto;
+    }
+ 
+    .zeo-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .zeo-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .zeo-text{
+        padding-top: 115px;
+    }
+    .zeo-img{
+    text-align: center;
+    }
+    .zeo-img img{
+        width: 560px;
+        height: auto;
+    }
+    .zeo{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+
+
+    }
+   
+
+}
+@media (max-width: 680px){
+    .zeo-img img{
+        width: 100%;
+        height: auto;
+        
+    }
+}
